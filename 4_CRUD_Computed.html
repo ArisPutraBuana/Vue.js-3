@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD (Menghitung Otomatis Variabel) | video ke-4 (Channel: Victor Silalahi)</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            Nilai A : <input type="text" name="nilaiA" v-model="nA">
+            Nilai B : <input type="text" name="nilaiB" v-model="nB">
+        </div>
+        <br>
+        <div>
+            Hasil Perkalihan : {{ hasilKali }} <br>
+            Hasil Pembagian : {{ hasilBagi }} <br>
+            Hasil Penambahan : {{ hasilTambah }} <br>
+            Hasil Pengurangan : {{ hasilKurang }}
+        </div>
+    </div>
+
+</body>
+<!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+<script src="js/vue.js"></script>
+<script src="js/4_CRUD_Computed.js"></script>
+
+</html>

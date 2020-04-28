@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pencarian Menggunakan (Filter dan Order) | video ke-7 (Channel: Victor Silalahi)</title>
+</head>
+
+<body>
+    <div id="app">
+        Cari : <input type="text" v-model="search"><br>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>NAMA</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="dataPeg in CariData">
+                    <td>{{ dataPeg.nama }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+<script src="js/vue.js"></script>
+<script src="js/7_Filter.js"></script>
+
+</html>

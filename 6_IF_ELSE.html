@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directive (v-if & v-else) | video ke-6 (Channel: Victor Silalahi)</title>
+</head>
+
+<body>
+    <div id="app">
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>NAMA</th>
+                    <th>ABSENSI</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="dS in dataSiswa">
+                    <td>{{ dS.id }}</td>
+                    <td>{{ dS.nama }}</td>
+                    <td>
+                        <div v-if="dS.hadir">Hadir</div>
+                        <div v-else>Tidak Hadir</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+<!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+<script src="js/vue.js"></script>
+<script src="js/6_IF_ELSE.js"></script>
+
+</html>

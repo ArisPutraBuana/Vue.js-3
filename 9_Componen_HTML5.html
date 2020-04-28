@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menggabungkan Komponen dgn HTML5 | video ke-9 (Channel: Victor Silalahi)</title>
+</head>
+
+<body>
+    <div id="app">
+        <header_atas></header_atas>
+    </div>
+    <!-- <template> => biasanya memerlukan ID -->
+    <template id="banner_web">
+        <!-- Hanya menampilkan baris pertama saja ( H2 ) -->
+        <h2>Selamat Datang di Web Vue.js</h2>
+
+        <!-- Tidak tampil -->
+        <h1>Header 1</h1>
+        <button>Login</button>
+        <button>Logout</button>
+    </template>
+
+</body>
+<!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+<script src="js/vue.js"></script>
+<script src="js/9_Componen_HTML5.js"></script>
+
+</html>

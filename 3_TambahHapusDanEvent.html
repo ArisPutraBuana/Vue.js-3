@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Merancang Function melalui Event | video ke-3 (Channel: Victor Silalahi)
+    </title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div>
+        Nama :
+        <input type="text" id="txtNama" class="clear" v-model="newNama" />
+        <br />
+        Alamat :
+        <input type="text" id="txtAlamat" class="clear" v-model="newAlamat" />
+        <br />
+        Jurusan :
+        <input
+          type="text"
+          id="txtJurusan"
+          class="clear"
+          v-model="newJurusan"
+        /><br />
+        <button @click="tambahData">Tambah Data</button>
+      </div>
+      <br />
+      <table border="1">
+        <thead>
+          <tr>
+            <td>Nama</td>
+            <td>Alamat</td>
+            <td>Jurusan</td>
+            <td>AKSI</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="dS in dataSiswa">
+            <td>{{ dS.nama }}</td>
+            <td>{{ dS.alamat }}</td>
+            <td>{{ dS.jurusan }}</td>
+            <td><button @click="hapusData($index)">Hapus</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+    <script src="js/vue.js"></script>
+    <script src="js/3_TambahHapusDanEvent.js"></script>
+  </body>
+</html>

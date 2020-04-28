@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>v-bind(Mengubah CSS Komponen) | video ke-5 (Channel: Victor Silalahi)</title>
+    <style>
+        .tampil {
+            font-size: 140px;
+            background-color: rgb(100, 100, 100);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!--    v-bind = :    -->
+        <img :src="imgSrc" :style="imgStyle">
+        <div :class="classTampil">
+            Saya belajar Vue.js
+        </div>
+    </div>
+
+</body>
+<!-- Cara agar Vue.js dapat membaca semua komponen yg ada di HTML -->
+<script src="js/vue.js"></script>
+<script src="js/5_v-bindCSS.js"></script>
+
+</html>
